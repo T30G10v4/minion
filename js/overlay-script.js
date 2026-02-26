@@ -10,5 +10,5 @@ let font = "50px 'Black Ops One', 'Stencil', 'Impact', sans-serif";
 const myCanvas = document.getElementById("overlay");
 const ctx = myCanvas.getContext("2d");
 
-const overlay = new Overlay(ctx, 480, 270, color10, color30, 15, color30fill, text, font);
+const overlay = new Overlay(ctx, 480, 270, color10, color30, 10, color30fill, text, font);
 overlay.draw();
