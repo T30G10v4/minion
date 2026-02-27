@@ -98,6 +98,9 @@ export class Overlay {
     const polygon = new Polygon(this.ctx, this.width / 2, this.height - (this.thickness / 2), this.thickness * 6, 5, this.color30fill, gradient2);
     polygon.draw();
 
+    const polygon2 = new Polygon(this.ctx, this.width / 2, this.height - (this.thickness / 2), this.thickness * 5.5, 5, this.color30fill, this.color30fill);
+    polygon2.draw();
+
     const writing = new Writing(this.ctx, this.width / 2, this.height - (this.thickness * 1.5), this.text, this.font, "center", "middle", "white", 5, "black");
 
     requestAnimationFrame(this.draw.bind(this));
